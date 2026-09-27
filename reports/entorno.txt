@@ -1,9 +1,9 @@
-Fecha: 2026-09-27 15:48
-Entorno: Google Colab (aprobado por el docente)
+Fecha (UTC): 2026-09-27 18:58
+Entorno: Google Colab
 Interprete: /usr/bin/python3
 Python: 3.13.15
 Sistema: Linux-6.6.122+-x86_64-with-glibc2.39
-CPU: AMD EPYC 7B12
+CPU: Intel(R) Xeon(R) CPU @ 2.20GHz
 Nucleos logicos: 2
 RAM: 12Gi
 GPU: Sin GPU (runtime CPU)
