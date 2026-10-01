@@ -1,0 +1,5 @@
+modelo,f1_macro,recall_dropout,f1_macro_cv
+dummy,0.2221,0.0,
+svm_base,0.6687,0.6303,
+svm_ajustada,0.6683,0.6725,0.6857
+svm_ajustada_sin_admin,0.6366,0.6021,

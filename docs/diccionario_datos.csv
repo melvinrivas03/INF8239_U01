@@ -1,0 +1,38 @@
+variable,tipo_pandas,significado,momento_disponibilidad,transformacion,riesgo
+Marital status,int64,Estado civil (código),Matrícula,Imputación moda + One-hot (categorías < 10 casos agrupadas),Atributo sensible: vigilar sesgo
+Application mode,int64,Vía de admisión (código),Matrícula,Imputación moda + One-hot (categorías < 10 casos agrupadas),Bajo
+Application order,int64,Orden de preferencia de la carrera en la solicitud (0 = primera),Matrícula,Imputación mediana + estandarización,Bajo
+Course,int64,Carrera (código),Matrícula,Imputación moda + One-hot (categorías < 10 casos agrupadas),Bajo
+Daytime/evening attendance,int64,Horario diurno (1) o nocturno (0),Matrícula,Imputación mediana + estandarización,Bajo
+Previous qualification,int64,Formación previa (código),Matrícula,Imputación moda + One-hot (categorías < 10 casos agrupadas),Bajo
+Previous qualification (grade),float64,Nota de la formación previa (0-200),Matrícula,Imputación mediana + estandarización,Bajo
+Nacionality,int64,Nacionalidad (código),Matrícula,Imputación moda + One-hot (categorías < 10 casos agrupadas),Atributo sensible: vigilar sesgo
+Mother's qualification,int64,Nivel educativo de la madre (código),Matrícula,Imputación moda + One-hot (categorías < 10 casos agrupadas),Bajo
+Father's qualification,int64,Nivel educativo del padre (código),Matrícula,Imputación moda + One-hot (categorías < 10 casos agrupadas),Bajo
+Mother's occupation,int64,Ocupación de la madre (código),Matrícula,Imputación moda + One-hot (categorías < 10 casos agrupadas),Bajo
+Father's occupation,int64,Ocupación del padre (código),Matrícula,Imputación moda + One-hot (categorías < 10 casos agrupadas),Bajo
+Admission grade,float64,Nota de admisión (0-200),Matrícula,Imputación mediana + estandarización,Bajo
+Displaced,int64,Desplazado de su residencia (1 = sí),Matrícula,Imputación mediana + estandarización,Bajo
+Educational special needs,int64,Necesidades educativas especiales (1 = sí),Matrícula,Imputación mediana + estandarización,Bajo
+Debtor,int64,Tiene deudas con la institución (1 = sí),No documentado (registro administrativo),Imputación mediana + estandarización,Posible fuga: fecha de medición no documentada (análisis de sensibilidad)
+Tuition fees up to date,int64,Matrícula al día (1 = sí),No documentado (registro administrativo),Imputación mediana + estandarización,Posible fuga: fecha de medición no documentada (análisis de sensibilidad)
+Gender,int64,"Sexo (1 = masculino, 0 = femenino)",Matrícula,Imputación mediana + estandarización,Atributo sensible: vigilar sesgo
+Scholarship holder,int64,Becado (1 = sí),Matrícula,Imputación mediana + estandarización,Bajo
+Age at enrollment,int64,Edad al matricularse (años),Matrícula,Imputación mediana + estandarización,Atributo sensible: vigilar sesgo
+International,int64,Estudiante internacional (1 = sí),Matrícula,Imputación mediana + estandarización,Atributo sensible: vigilar sesgo
+Curricular units 1st sem (credited),int64,Unidades acreditadas (convalidadas) en el 1.er semestre,Fin del 1.er semestre,Imputación mediana + estandarización,Bajo
+Curricular units 1st sem (enrolled),int64,Unidades inscritas en el 1.er semestre,Fin del 1.er semestre,Imputación mediana + estandarización,Bajo
+Curricular units 1st sem (evaluations),int64,Evaluaciones realizadas en el 1.er semestre,Fin del 1.er semestre,Imputación mediana + estandarización,Bajo
+Curricular units 1st sem (approved),int64,Unidades aprobadas en el 1.er semestre,Fin del 1.er semestre,Imputación mediana + estandarización,Bajo
+Curricular units 1st sem (grade),float64,Promedio de notas (0-20) en el 1.er semestre,Fin del 1.er semestre,Imputación mediana + estandarización,Bajo
+Curricular units 1st sem (without evaluations),int64,Unidades sin evaluación en el 1.er semestre,Fin del 1.er semestre,Imputación mediana + estandarización,Bajo
+Curricular units 2nd sem (credited),int64,Unidades acreditadas (convalidadas) en el 2.º semestre,Fin del 2.º semestre (posterior a la predicción),Excluida por fuga,Fuga temporal: no existe al fin del 1.er semestre
+Curricular units 2nd sem (enrolled),int64,Unidades inscritas en el 2.º semestre,Fin del 2.º semestre (posterior a la predicción),Excluida por fuga,Fuga temporal: no existe al fin del 1.er semestre
+Curricular units 2nd sem (evaluations),int64,Evaluaciones realizadas en el 2.º semestre,Fin del 2.º semestre (posterior a la predicción),Excluida por fuga,Fuga temporal: no existe al fin del 1.er semestre
+Curricular units 2nd sem (approved),int64,Unidades aprobadas en el 2.º semestre,Fin del 2.º semestre (posterior a la predicción),Excluida por fuga,Fuga temporal: no existe al fin del 1.er semestre
+Curricular units 2nd sem (grade),float64,Promedio de notas (0-20) en el 2.º semestre,Fin del 2.º semestre (posterior a la predicción),Excluida por fuga,Fuga temporal: no existe al fin del 1.er semestre
+Curricular units 2nd sem (without evaluations),int64,Unidades sin evaluación en el 2.º semestre,Fin del 2.º semestre (posterior a la predicción),Excluida por fuga,Fuga temporal: no existe al fin del 1.er semestre
+Unemployment rate,float64,Tasa de desempleo del país (%) en el año de ingreso,Año de ingreso,Imputación mediana + estandarización,Bajo
+Inflation rate,float64,Tasa de inflación (%) en el año de ingreso,Año de ingreso,Imputación mediana + estandarización,Bajo
+GDP,float64,Variación del PIB en el año de ingreso,Año de ingreso,Imputación mediana + estandarización,Bajo
+Target,object,Situación final: Dropout / Enrolled / Graduate,Fin de la duración normal de la carrera,Target (no es predictor),Bajo
