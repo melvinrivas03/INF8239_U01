@@ -36,11 +36,3 @@ download_dataset()   # UCI -> data/raw/dataset.csv
 python -m pip install -r requirements.txt
 PYTHONPATH=src python -m pytest -q
 ```
-
-## Ejercicio 02 · Ensambles, reducción y Green AI
-- Notebook: `notebooks/03_ensambles_green_ai.ipynb` (mismo dataset, target y partición del Ejercicio 01).
-- 8 configuraciones: logística, SVM C=1, SVM C=10, SVM+PCA, RF 100, RF 300, boosting, MLP.
-- Tiempo de ajuste: mediana de 3 repeticiones; inferencia y tamaño serializado.
-- Resultados: `reports/green_ai_results.csv`. Figuras: `reports/pca.png`, `reports/tsne_two_seeds.png`, `reports/pareto.png`.
-- Modelos serializados: `reports/models/`. Entorno de medición: `reports/entorno_e02.txt`.
-- Modelo seleccionado: ver la sección 7 del notebook.
