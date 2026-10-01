@@ -1,0 +1,4 @@
+modelo,f1_macro_test,f1_macro_cv
+dummy,0.3871,
+svm_base,0.9812,
+svm_ajustada,0.9812,0.9739
